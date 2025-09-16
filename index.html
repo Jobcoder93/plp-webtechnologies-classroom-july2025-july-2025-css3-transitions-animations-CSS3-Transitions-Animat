@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Animation Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Interactive Animation Example</h1>
+
+  <!-- Part 1: Button with CSS hover/transition -->
+  <button id="colorBtn">Hover & Click Me</button>
+
+  <!-- Part 3: Box to animate via JS -->
+  <div class="box" id="animateBox"></div>
+
+  <!-- Modal triggered by button -->
+  <button id="openModalBtn">Open Modal</button>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <p>Hello! I’m a modal.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
