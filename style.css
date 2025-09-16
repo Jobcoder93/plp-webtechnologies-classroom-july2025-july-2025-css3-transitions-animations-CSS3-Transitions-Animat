@@ -1,0 +1,65 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Part 1: Button hover effects */
+#colorBtn {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#colorBtn:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+/* Part 3: Box animation triggered by JS */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 2rem auto;
+  transition: transform 0.5s ease;
+}
+.box.move {
+  transform: translateX(150px) rotate(45deg);
+}
+
+/* Modal Styles */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  animation: fadeIn 0.5s forwards;
+}
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 8px;
+  animation: slideIn 0.5s forwards;
+}
+#closeModal {
+  float: right;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Keyframes for modal */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes slideIn {
+  from {transform: translateY(-50px);}
+  to {transform: translateY(0);}
+}
